@@ -1,0 +1,12 @@
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\FrameWork.Domain\bin\Debug\net6.0\FrameWork.Domain.deps.json
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\FrameWork.Domain\bin\Debug\net6.0\FrameWork.Domain.dll
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\FrameWork.Domain\bin\Debug\net6.0\FrameWork.Domain.pdb
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\FrameWork.Domain\obj\Debug\net6.0\FrameWork.Domain.csproj.AssemblyReference.cache
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\FrameWork.Domain\obj\Debug\net6.0\FrameWork.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\FrameWork.Domain\obj\Debug\net6.0\FrameWork.Domain.AssemblyInfoInputs.cache
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\FrameWork.Domain\obj\Debug\net6.0\FrameWork.Domain.AssemblyInfo.cs
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\FrameWork.Domain\obj\Debug\net6.0\FrameWork.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\FrameWork.Domain\obj\Debug\net6.0\FrameWork.Domain.dll
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\FrameWork.Domain\obj\Debug\net6.0\refint\FrameWork.Domain.dll
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\FrameWork.Domain\obj\Debug\net6.0\FrameWork.Domain.pdb
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\FrameWork.Domain\obj\Debug\net6.0\ref\FrameWork.Domain.dll

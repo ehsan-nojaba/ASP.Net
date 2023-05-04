@@ -1,0 +1,5 @@
+﻿@model Shopping.DomainModel.DTO.Category.CategorySearchModel
+<div id="dvForm" class="form-group">
+    <label asp-for="ParentId" class="control-label"></label>
+    <select asp-for="ParentId" asp-items="@ViewBag.ctr"></select>
+</div>

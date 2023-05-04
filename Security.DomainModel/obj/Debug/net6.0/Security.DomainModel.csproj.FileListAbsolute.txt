@@ -1,0 +1,14 @@
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\Security.DomainModel\bin\Debug\net6.0\Security.DomainModel.deps.json
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\Security.DomainModel\bin\Debug\net6.0\Security.DomainModel.runtimeconfig.json
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\Security.DomainModel\bin\Debug\net6.0\Security.DomainModel.dll
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\Security.DomainModel\bin\Debug\net6.0\Security.DomainModel.pdb
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\Security.DomainModel\obj\Debug\net6.0\Security.DomainModel.csproj.AssemblyReference.cache
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\Security.DomainModel\obj\Debug\net6.0\Security.DomainModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\Security.DomainModel\obj\Debug\net6.0\Security.DomainModel.AssemblyInfoInputs.cache
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\Security.DomainModel\obj\Debug\net6.0\Security.DomainModel.AssemblyInfo.cs
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\Security.DomainModel\obj\Debug\net6.0\Security.DomainModel.csproj.CoreCompileInputs.cache
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\Security.DomainModel\obj\Debug\net6.0\Security.DomainModel.dll
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\Security.DomainModel\obj\Debug\net6.0\refint\Security.DomainModel.dll
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\Security.DomainModel\obj\Debug\net6.0\Security.DomainModel.pdb
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\Security.DomainModel\obj\Debug\net6.0\Security.DomainModel.genruntimeconfig.cache
+C:\Users\Ehsan\Downloads\Work\Programming\MVC\Sample-Project\WorkShopSample1\Security.DomainModel\obj\Debug\net6.0\ref\Security.DomainModel.dll

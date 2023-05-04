@@ -1,0 +1,89 @@
+﻿.form-account {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#box-style {
+    width: 57%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    box-shadow: 0 0 10px 0px #979797;
+    border-radius: 10px;
+    padding: 5rem 8rem;
+}
+
+.account-box-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.form-account-link {
+}
+
+.dk-btn-info {
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    padding: 6px 0;
+    border-radius: 9px;
+    font-family: vazir;
+    font-size: 14px;
+    background: #ee6178;
+    color: #fff;
+}
+
+.form-account-title {
+    font-family: vazir !important;
+    font-size: 14px !important;
+    margin-top: 5px;
+}
+
+.form-account-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 1.5rem;
+}
+
+.account-box-footer {
+    margin-top: 0.5rem;
+}
+
+.parent-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-account-submit {
+    align-items: start;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+
+a {
+    font-family: vazir !important;
+    font-size: 14px !important;
+}
+
+span {
+    font-family: vazir !important;
+    font-size: 14px !important;
+}
+
+label {
+    font-family: vazir !important;
+    font-size: 15px !important;
+}

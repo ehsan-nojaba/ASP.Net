@@ -1,0 +1,54 @@
+﻿@model Shopping.DomainModel.DTO.Category.CategorySearchModel
+
+<h4>CategorySearchModel</h4>
+<hr />
+<script src="~/js/Method.js"></script>
+<style>
+    a {
+        color: #fff !important;
+    }
+</style>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="myModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" id="dvContent">
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index" id="frmSearch">
+            <div class="form-group">
+                <label asp-for="CategoryName" class="control-label"></label>
+                <input asp-for="CategoryName" class="form-control" />
+            </div>
+            @await Component.InvokeAsync("CategorySearchBox",this.Model)
+            <div class="form-group">
+                <a class="btn btn-primary" id="btnAddNew" data-action="@Url.Action("AddNew","Category")" data-container="dvContent" data-modal="myModal">Add New</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="dvGrid">
+    @await Component.InvokeAsync("CategoryList" , this.Model)
+</div>
+
+<script>
+    function BindGrid() {
+        var sendingUrl = "@Url.Action("ListView","Category")";
+        var sendingData = $("#frmSearch").serialize();
+        $.get(sendingUrl, sendingData, function (grd) {
+            $("#dvGrid").html(grd);
+        });
+    }
+    function RefSearchGrid() {
+        var sendingUrl = "@Url.Action("SearchBoxView","Category")";
+        $.get(sendingUrl, null, function (ref) {
+            $("#dvForm").html(ref);
+        });
+    }
+    
+</script>

@@ -1,0 +1,121 @@
+﻿@model Shopping.DomainModel.DTO.Supplier.SupplierSearchModel
+
+<style>
+    a {
+        color: #fff !important;
+    }
+</style>
+
+<h4>SupplierSearchModel</h4>
+<hr />
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="myModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" id="dvContent">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index" id="frmSearch">
+            <div class="form-group">
+                <label asp-for="SupplierName" class="control-label"></label>
+                <input asp-for="SupplierName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Tel" class="control-label"></label>
+                <input asp-for="Tel" class="form-control" />
+            </div>
+            <div class="form-group">
+                <a class="btn btn-primary" id="btnAddNew" data-action="@Url.Action("AddNew","Supplier")" data-modal="myModal" data-container="dvContent">AddNew</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="dvGrid">
+    @await Component.InvokeAsync("SupplierList",this.Model)
+</div>
+
+<script>
+    function BindGrid(){
+        var sendingUrl = "@Url.Action("ListActionResult","Supplier")";
+        var sendingData = $("#frmSearch").serialize();
+        $.get(sendingUrl, sendingData , function(grd){
+            $("#dvGrid").html(grd);
+        });
+    }
+    function SuccessMessage(SuccessTxt) {
+        Swal.fire({
+            icon: 'success',
+            title: 'وضعیت ثبت',
+            text: SuccessTxt,
+        });
+    }
+    function ErrorMessage(ErrorTxt) {
+        Swal.fire({
+            icon: 'error',
+            title: 'خطا',
+            text: ErrorTxt,
+        });
+    }
+    
+    $(document).on("click", "#btnAdd", function () {
+        var action = $(this).attr("data-action");
+        var method = $(this).attr("data-method");
+        var frmId = "#" + $(this).attr("data-form-id");
+        if (method === "post") {
+            var sendingData = $(frmId).serialize();
+            $.post(action, sendingData, function (op) {
+                if (op.success.toString() == "true") {
+                    $("#myModal").modal("hide");
+                    SuccessMessage(op.message);
+                    BindGrid();
+                }
+                else {
+                    ErrorMessage(op.message);
+                }
+            });
+        }
+    });
+    
+    $(document).on("click", "#btnAddNew" , function(){
+        var action = $(this).attr("data-action");
+        var modal = $(this).attr("data-modal");
+        var container = $(this).attr("data-container");
+        $.get(action, null, function (rd) {
+            $("#" + container).html(rd);
+            $("#" + modal).modal('show');
+        });
+    });
+
+    $(document).on("keyup", "#SupplierName",function(){
+        BindGrid();
+    });
+    $(document).on("keyup", "#Tel", function () {
+        BindGrid();
+    });
+    
+    $(document).on("click","#btnDelete" , function(){
+        if(confirm("Are You Sure ? ")){
+            var sendingUrl = $(this).attr("data-action");
+            var method = $(this).attr("data-method");
+            var id = $(this).attr("data-id");
+            if (method === "post") {
+                var sendingData = "id=" + id;
+                $.post(sendingUrl , sendingData , function(op){
+                    if(op.success.toString() == "true"){
+                        var rowId = "tr_" + id;
+                        $("#" + rowId).slideUp(500);
+                        SuccessMessage(op.message);
+                        BindGrid();
+                    }
+                    else {
+                        ErrorMessage(op.message);
+                    }
+                });
+            }
+        }
+    });
+</script>

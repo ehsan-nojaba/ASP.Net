@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FrameWork\FrameWork.csproj" />
+    <ProjectReference Include="..\Security.BusinessServiceContract\Security.BusinessServiceContract.csproj" />
+    <ProjectReference Include="..\Security.Business\Security.Business.csproj" />
+    <ProjectReference Include="..\Security.DataAccessServiceContract\Security.DataAccessServiceContract.csproj" />
+    <ProjectReference Include="..\Security.DataAccess\Security.DataAccess.csproj" />
+    <ProjectReference Include="..\Security.DomainModel\Security.DomainModel.csproj" />
+  </ItemGroup>
+
+</Project>

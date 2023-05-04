@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Security.Bootstrap\Security.BootStrap.csproj" />
+    <ProjectReference Include="..\Security.BusinessServiceContract\Security.BusinessServiceContract.csproj" />
+    <ProjectReference Include="..\Security.Business\Security.Business.csproj" />
+    <ProjectReference Include="..\Security.DomainModel\Security.DomainModel.csproj" />
+    <ProjectReference Include="..\Shopping.BootStrap\Shopping.BootStrap.csproj" />
+    <ProjectReference Include="..\Shopping.BusinessServiceContract\Shopping.BusinessServiceContract.csproj" />
+    <ProjectReference Include="..\Shopping.Business\Shopping.Business.csproj" />
+    <ProjectReference Include="..\Shopping.DomainModel\Shopping.DomainModel.csproj" />
+  </ItemGroup>
+
+</Project>

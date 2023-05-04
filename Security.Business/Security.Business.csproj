@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FrameWork\FrameWork.csproj" />
+    <ProjectReference Include="..\Security.BusinessServiceContract\Security.BusinessServiceContract.csproj" />
+    <ProjectReference Include="..\Security.DataAccessServiceContract\Security.DataAccessServiceContract.csproj" />
+    <ProjectReference Include="..\Security.DomainModel\Security.DomainModel.csproj" />
+  </ItemGroup>
+
+</Project>
